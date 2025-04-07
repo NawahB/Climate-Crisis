@@ -1,0 +1,378 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  
+  background-color: #4b0e0e;
+  padding: 0.5rem 0;
+  width: 100%;
+  
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #ffcc66;
+}
+
+header h1,
+header p,
+nav a {
+  color: white;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 1);
+}
+
+a:hover {
+  color: #f9c56e;
+  text-decoration: underline;
+}
+
+.content-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+body {
+  font-family: 'Georgia', serif;
+  color: #d1d1d1;
+  background-color: #1D130E;
+}
+
+header {
+  background-image: url('forest-header.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  padding: 0rem 5;
+  position: relative;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.header-content p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+/* Firemap Section */
+.firemap-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #eee;
+  border-radius: 10px;
+  max-width: 1400px;
+}
+
+.firemap-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.firemap-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.firemap-text h2 {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.firemap-text p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+/* Evacuation Section */
+.evacuation-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent dark box */
+  color: #eee;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 1400px;
+  justify-content: center;
+}
+
+.content-img {
+  width: 48%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.evacuation-text {
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.evacuation-text h2 {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.evacuation-text p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Damages Section */
+.damages-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.7); /* dark semi-transparent bg */
+  color: #eee;
+  border-radius: 10px;
+  max-width: 1400px;
+}
+
+.content-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.damages-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.damages-text h2 {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.damages-text hr {
+  border: 1px solid #888;
+  margin-bottom: 1rem;
+}
+
+.damages-text p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/*Causes*/
+.causes-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #eee;
+  border-radius: 10px;
+  max-width: 1400px;
+}
+
+.content-img {
+  width: 100%;
+  max-width: 48%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.causes-text {
+  flex: 1 1 100%;
+  max-width: 800px;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.causes-text h2 {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.causes-text hr {
+  border: 1px solid #888;
+  margin-bottom: 1rem;
+}
+
+.causes-text p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+
+/*incidents Section*/
+.incidents-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.7); /* same dark box */
+  color: #eee;
+  border-radius: 10px;
+  max-width: 1400px;
+}
+
+.content-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.incidents-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.incidents-text h2 {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.incidents-text hr {
+  border: 1px solid #888;
+  margin-bottom: 1rem;
+}
+
+.incidents-text p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/*Aftermath Section*/
+.aftermath-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #eee;
+  border-radius: 10px;
+  max-width: 1400px;
+}
+
+.content-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.aftermath-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.aftermath-text h2 {
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.aftermath-text hr {
+  border: 1px solid #888;
+  margin-bottom: 1rem;
+}
+
+.aftermath-text p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #4b0e0e;
+    padding: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    text-align: center;
+    padding: 0rem;
+  }
+
+  .firemap-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .firemap-img {
+    width: 100%;
+  }
+
+  .firemap-text {
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
